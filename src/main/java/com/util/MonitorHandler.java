@@ -128,7 +128,7 @@ public class MonitorHandler {
         if(ruleMap==null){
             load();
         }
-        System.out.println(message.getAppId());
+      //  System.out.println(message.getAppId());
         List<Rule>keywordByAppIdlist=ruleMap.get(message.getAppId());
         for(Rule rule:keywordByAppIdlist){
             if(message.getLine().contains(rule.getKeyword())){
